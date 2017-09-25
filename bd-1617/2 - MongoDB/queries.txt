@@ -1,0 +1,11 @@
+db.reservas.find({_id:"res3"},{username:1,preco:1}).pretty()
+
+db.reservas.find({username:"usr7"},{data_reserva:1,lugares:1}).pretty()
+
+db.utilizadores.insert({_id:"usr17",nome:"João Reis",password:"passmongo",email:"joao@reis.me",nif:119,morada:"Marco da Giesta"})
+
+db.reservas.insert({_id:"res5", username:"user3", data_reserva:"2017-01-02 17:03:54.0", id_comboio:"FASTX1", preco:13, origem:"Porto", "horaPartida" : "2016-03-28 11:00:00.0", "horaChegada" : "2016-03-28 13:00:00.0", "lugares": [ {"numero" : 4, "carruagem" : 1, "classe" : 1  }, {"numero" : 5, "carruagem" : 1, "classe" : 1}]})
+
+db.comboios.find({_id:"FASTX1"},{nome:1}).pretty()
+
+db.utilizadores.find({_id:”usr17”},{email:1}).pretty()
